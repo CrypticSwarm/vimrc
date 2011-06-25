@@ -31,6 +31,10 @@ set smartcase
 set smartindent
 set incsearch
 syntax on
+if has('gui_running')
+  colorscheme underwater-mod
+endif
+
 inoremap kj <ESC>
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>

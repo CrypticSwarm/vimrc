@@ -16,3 +16,9 @@
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
+[submodule "bundle/colors-solarized"]
+	path = bundle/colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized
+[submodule "bundle/colors-mgutz"]
+	path = bundle/colors-mgutz
+	url = git://github.com/mgutz/vim-colors.git
