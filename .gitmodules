@@ -22,3 +22,6 @@
 [submodule "bundle/colors-mgutz"]
 	path = bundle/colors-mgutz
 	url = git://github.com/mgutz/vim-colors.git
+[submodule "bundle/snipmate-nodejs"]
+	path = bundle/snipmate-nodejs
+	url = git://github.com/jamescarr/snipmate-nodejs.git
