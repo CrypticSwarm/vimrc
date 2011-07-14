@@ -25,3 +25,6 @@
 [submodule "bundle/snipmate-nodejs"]
 	path = bundle/snipmate-nodejs
 	url = git://github.com/jamescarr/snipmate-nodejs.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
