@@ -36,11 +36,15 @@ if has('gui_running')
   colorscheme underwater-mod
 endif
 
+
 inoremap kj <ESC>
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
-nmap <leader>v :tabedit $MYVIMRC<CR>
+nmap <leader>vc :tabedit $MYVIMRC<CR>
+nmap <leader>vt :tabedit
+map <leader>vs :sp
+nmap <leader>vv :vsp
 nnoremap <C-h> <C-left>
 nnoremap <C-l> <C-right>
 nnoremap ; :
@@ -72,7 +76,9 @@ nnoremap <leader>< <C-w>5<
 nnoremap <leader>> <C-w>5>
 nnoremap <leader>c zfa{
 nnoremap <F9> :set expandtab<ENTER>:retab<ENTER>
-let clj_highlight_builtins = 1
+
+nnoremap <leader>[ :set list!<CR>
+let vimclojure#HighlightBuiltins = 1
 
 let g:netrw_liststyle=3 " Use tree-mode as default view
 let g:netrw_preview=1 " preview window shown in a vertically split
