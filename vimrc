@@ -62,9 +62,9 @@ filetype off
 filetype plugin indent on
 
 syntax on
-if has('gui_running')
-  colorscheme underwater-mod
-endif
+
+" Color scheme from: (http://www.vim.org/scripts/script.php?script_id=1807)
+colorscheme calmar256-dark
 
 let mapleader = ","
 
