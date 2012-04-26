@@ -131,17 +131,16 @@ nmap <leader>vv :vsp
 nnoremap <C-h> <C-left>
 nnoremap <C-l> <C-right>
 nnoremap ; :
-nnoremap <leader>s :syntax on<CR>
-nnoremap <leader>ns :syntax off<CR>
+nnoremap <leader>st :call ToggleSyntax()<cr>
 
-
-
+function! ToggleSyntax()
+  if exists("g:syntax_on") | syntax off | else | syntax enable | endif
+endfunction
 
 nnoremap <leader>c zfa{
 nnoremap <F9> :set expandtab<ENTER>:retab<ENTER>
 
 let vimclojure#HighlightBuiltins = 1
-
 
 " Toggles the hidden characters
 nnoremap <leader>[ :set list!<CR>
