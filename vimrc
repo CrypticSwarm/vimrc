@@ -105,10 +105,6 @@ onoremap <leader>h ^
 vnoremap <leader>l $
 vnoremap <leader>h ^
 
-" No idea what this was about
-nnoremap <leader>qn :nunmap <leader>wj<ENTER> :nnoremap <leader>wj <C-V><C-w>j<C-V><C-w>_<ENTER> :nunmap <leader>wk<ENTER> :nnoremap <leader>wk <C-V><C-w>k<C-V><C-w>_<ENTER>
-nnoremap <leader>qf :nunmap <leader>wj<ENTER> :nnoremap <leader>wj <C-V><C-w>j<ENTER> :nunmap <leader>wk<ENTER> :nnoremap <leader>wk <C-V><C-w>k<ENTER>
-
 " Window Movements
 nnoremap <leader>wl <C-w>l
 nnoremap <leader>wj <C-w>j
