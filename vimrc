@@ -127,8 +127,14 @@ nmap <leader>vv :vsp
 nnoremap <C-h> <C-left>
 nnoremap <C-l> <C-right>
 nnoremap ; :
-nnoremap <leader>st :call ToggleSyntax()<cr>
 
+" Toggle search highlighting. Sometimes it gets annoying when doing
+" searches for movement
+nnoremap <leader>o :set hlsearch!<cr>
+
+" Toggle syntax highlighting on and off.
+" Useful for long lines
+nnoremap <leader>st :call ToggleSyntax()<cr>
 function! ToggleSyntax()
   if exists("g:syntax_on") | syntax off | else | syntax enable | endif
 endfunction
