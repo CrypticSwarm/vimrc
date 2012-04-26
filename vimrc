@@ -67,10 +67,16 @@ if has('gui_running')
 endif
 
 let mapleader = ","
-" Source the vimrc file after saving it
-if has("autocmd")
-  autocmd bufwritepost .vimrc source $MYVIMRC
-endif
+
+" Source the vimrc file after saving it {{{
+augroup vimrc
+  if has("autocmd")
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+    autocmd bufwritepost .vimrc source $MYVIMRC
+  endif
+augroup end
+" }}}
 
 nmap <C-S-P> :call <SID>SynStack()<CR>
 function! <SID>SynStack()
