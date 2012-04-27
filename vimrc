@@ -146,6 +146,11 @@ nnoremap <F9> :set expandtab<ENTER>:retab<ENTER>
 " Toggles the hidden characters
 nnoremap <leader>[ :set list!<CR>
 
+" Fugitive Bindings prefix -> <leader>g 
+nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gd :Gdiff<cr>
+nnoremap <leader>gc :Gcommit<cr>
+
 " Built in file browser
 let g:netrw_liststyle=3 " Use tree-mode as default view
 let g:netrw_preview=1 " preview window shown in a vertically split
