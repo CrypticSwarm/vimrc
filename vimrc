@@ -25,7 +25,7 @@ set sidescrolloff=5     " Context columns at left and right.
 set sidescroll=1        " Number of chars to scroll when scrolling sideways.
 set backspace=indent,eol,start  " Backspace over everything in Insert mode
 
-" Tab Related
+" Tab Key Related
 set expandtab           " Insert spaces for <Tab> press; use spaces to indent.
 set smarttab            " Tab respects 'shiftwidth', 'tabstop', 'softtabstop'.
 set tabstop=2           " Set the visible width of tabs.
@@ -43,8 +43,8 @@ set nocursorline        " Don't highlight the current screen line...
 set nocursorcolumn      " ...or screen column...
 
 
-"Buffer related configs
-set hidden " allow hidden buffers
+" Buffer related configs
+set hidden     " allow hidden buffers
 set splitright " open vsp to the right
 set splitbelow " open sp to the below
 
@@ -116,6 +116,7 @@ nnoremap <leader>wK <C-w>K
 nnoremap <leader>wH <C-w>H
 nnoremap <leader>wr <C-w>r
 
+" I used to commonly mistype and press F1 instead of Esc
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
@@ -141,8 +142,6 @@ endfunction
 
 nnoremap <leader>c zfa{
 nnoremap <F9> :set expandtab<ENTER>:retab<ENTER>
-
-let vimclojure#HighlightBuiltins = 1
 
 " Toggles the hidden characters
 nnoremap <leader>[ :set list!<CR>
