@@ -150,6 +150,8 @@ nnoremap <leader>[ :set list!<CR>
 nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>gc :Gcommit<cr>
+nnoremap <leader>gw :Gwrite<cr>
+nnoremap <leader>gr :Gread<cr>
 
 " Built in file browser
 let g:netrw_liststyle=3 " Use tree-mode as default view
