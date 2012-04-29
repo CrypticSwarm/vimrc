@@ -152,6 +152,7 @@ nnoremap <silent> <leader>gd :Gdiff<cr>
 nnoremap <silent> <leader>gc :Gcommit<cr>
 nnoremap <silent> <leader>gw :Gwrite<cr>
 nnoremap <silent> <leader>gr :Gread<cr>
+nnoremap <silent> <leader>gl :Glog<cr>
 
 " Built in file browser
 let g:netrw_liststyle=3 " Use tree-mode as default view
