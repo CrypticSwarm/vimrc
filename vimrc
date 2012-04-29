@@ -131,7 +131,7 @@ nnoremap ; :
 
 " Toggle search highlighting. Sometimes it gets annoying when doing
 " searches for movement
-nnoremap <leader>o :set hlsearch!<cr>
+nnoremap <silent> <leader>o :set hlsearch!<cr>
 
 " Toggle syntax highlighting on and off.
 " Useful for long lines
@@ -144,14 +144,14 @@ nnoremap <leader>c zfa{
 nnoremap <F9> :set expandtab<ENTER>:retab<ENTER>
 
 " Toggles the hidden characters
-nnoremap <leader>[ :set list!<CR>
+nnoremap <silent> <leader>[ :set list!<CR>
 
 " Fugitive Bindings prefix -> <leader>g 
-nnoremap <leader>gs :Gstatus<cr>
-nnoremap <leader>gd :Gdiff<cr>
-nnoremap <leader>gc :Gcommit<cr>
-nnoremap <leader>gw :Gwrite<cr>
-nnoremap <leader>gr :Gread<cr>
+nnoremap <silent> <leader>gs :Gstatus<cr>
+nnoremap <silent> <leader>gd :Gdiff<cr>
+nnoremap <silent> <leader>gc :Gcommit<cr>
+nnoremap <silent> <leader>gw :Gwrite<cr>
+nnoremap <silent> <leader>gr :Gread<cr>
 
 " Built in file browser
 let g:netrw_liststyle=3 " Use tree-mode as default view
