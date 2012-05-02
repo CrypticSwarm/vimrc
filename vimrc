@@ -12,6 +12,9 @@ set nocompatible
 set autoindent          " Copy indent from current line for new line.
 set nosmartindent       " 'smartindent' breaks right-shifting of # lines.
 
+" Set the hidden chars
+set listchars=tab:▸\ ,eol:¬
+
 set hidden              " Keep changed buffers without requiring saves.
 set ruler               " Always show the cursor position.
 set showcmd             " Display incomplete commands.
@@ -42,6 +45,7 @@ set smartcase           " Override 'ignorecase' if pattern contains uppercase.
 set nocursorline        " Don't highlight the current screen line...
 set nocursorcolumn      " ...or screen column...
 
+set wildmenu            " Use menu when autocompleting
 
 " Buffer related configs
 set hidden     " allow hidden buffers
