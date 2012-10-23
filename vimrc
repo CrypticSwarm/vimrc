@@ -136,7 +136,7 @@ nnoremap ; :
 
 " Toggle search highlighting. Sometimes it gets annoying when doing
 " searches for movement
-nnoremap <silent> <leader>o :set hlsearch!<cr>
+nnoremap <silent> <leader>o :nohlsearch<cr>
 
 " Toggle syntax highlighting on and off.
 " Useful for long lines
