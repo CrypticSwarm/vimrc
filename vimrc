@@ -45,7 +45,8 @@ set smartcase           " Override 'ignorecase' if pattern contains uppercase.
 set nocursorline        " Don't highlight the current screen line...
 set nocursorcolumn      " ...or screen column...
 
-set wildmenu            " Use menu when autocompleting
+set wildmenu              " Use menu when autocompleting
+set wildmode=longest,full " Use bash style for first tab, then wildmenu for double
 
 " Buffer related configs
 set hidden     " allow hidden buffers
