@@ -140,6 +140,7 @@ nnoremap <leader>st :call ToggleSyntax()<cr>
 function! ToggleSyntax()
   if exists("g:syntax_on") | syntax off | else | syntax enable | endif
 endfunction
+nnoremap <leader>ss :set spell!<cr>
 
 nnoremap <leader>c zfa{
 nnoremap <F9> :set expandtab<ENTER>:retab<ENTER>
