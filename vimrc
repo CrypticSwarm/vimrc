@@ -159,3 +159,5 @@ nnoremap <silent> <leader>gl :Glog
 " Built in file browser
 let g:netrw_liststyle=3 " Use tree-mode as default view
 let g:netrw_preview=1 " preview window shown in a vertically split
+
+vnoremap . :normal .<cr>
