@@ -103,12 +103,8 @@ nnoremap <leader>< <C-w>5<
 nnoremap <leader>> <C-w>5>
 
 " Custom movement commands
-nnoremap <leader>l $
-nnoremap <leader>h ^
-onoremap <leader>l $
-onoremap <leader>h ^
-vnoremap <leader>l $
-vnoremap <leader>h ^
+noremap <leader>l $
+noremap <leader>h ^
 
 " Window Movements
 nnoremap <leader>wl <C-w>l
