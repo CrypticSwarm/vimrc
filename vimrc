@@ -78,10 +78,18 @@ augroup vimrc
   if has("autocmd")
     autocmd!
     autocmd FileType vim setlocal foldmethod=marker
-    autocmd bufwritepost .vimrc source $MYVIMRC
+    autocmd BufWritePost .vimrc source $MYVIMRC
   endif
 augroup end
 " }}}
+
+
+augroup resizeWindow
+  if has("autocmd")
+    autocmd!
+    autocmd VimResized * exe "normal \<C-W>="
+  endif
+augroup end
 
 nmap <C-S-P> :call <SID>SynStack()<CR>
 function! <SID>SynStack()
