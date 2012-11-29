@@ -170,3 +170,18 @@ let g:netrw_liststyle=3 " Use tree-mode as default view
 let g:netrw_preview=1 " preview window shown in a vertically split
 
 vnoremap . :normal .<cr>
+
+" Screen or Tmux key fix for arrows
+if &term =~ '^screen'
+  " tmux will send xterm-style keys when xterm-keys is on
+  execute "set <xUp>=\e[1;*A"
+  execute "set <xDown>=\e[1;*B"
+  execute "set <xRight>=\e[1;*C"
+  execute "set <xLeft>=\e[1;*D"
+endif
+
+
+" Lame fix for mac sucking at copy and pasting doesn't work inside tmux :(
+function! MacCopy() range
+  echo system('echo '.shellescape(join(getline(a:firstline, a:lastline), "\n")).'| pbcopy')
+endfunction
