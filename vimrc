@@ -171,6 +171,13 @@ let g:netrw_preview=1 " preview window shown in a vertically split
 
 vnoremap . :normal .<cr>
 
+" Tmux key bindings
+
+nnoremap <leader>r :SlimuxREPLSendLine<CR>
+vnoremap <leader>r :SlimuxREPLSendSelection<CR>
+nnoremap <leader>aa :SlimuxShellLast<CR>
+nnoremap <leader>ai :SlimuxShellPrompt<CR>
+
 " Screen or Tmux key fix for arrows
 if &term =~ '^screen'
   " tmux will send xterm-style keys when xterm-keys is on
