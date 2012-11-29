@@ -71,8 +71,6 @@ syntax on
 " Color scheme from: (http://www.vim.org/scripts/script.php?script_id=1807)
 colorscheme calmar256-dark
 
-let mapleader = ","
-
 " Source the vimrc file after saving it {{{
 augroup vimrc
   if has("autocmd")
@@ -100,6 +98,12 @@ function! <SID>SynStack()
 endfunc
 
 """ KeyBindings
+
+" Both of these are pretty dangerous mappings.
+" Lose our on the short search forward and backward repeats.
+" Used these for too long...
+let mapleader = ","
+nnoremap ; :
 
 " Jump from insert into normal mode
 inoremap kj <ESC>
@@ -136,7 +140,6 @@ map <leader>vs :sp
 nmap <leader>vv :vsp
 nnoremap <C-h> <C-left>
 nnoremap <C-l> <C-right>
-nnoremap ; :
 
 " Toggle search highlighting. Sometimes it gets annoying when doing
 " searches for movement
