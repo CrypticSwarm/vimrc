@@ -200,3 +200,7 @@ endif
 function! MacCopy() range
   echo system('echo '.shellescape(join(getline(a:firstline, a:lastline), "\n")).'| pbcopy')
 endfunction
+
+" Markdown underline command
+inoremap <C-U>- <Esc>yypVr-ja
+inoremap <C-U>= <Esc>yypVr=ja
