@@ -204,3 +204,7 @@ endfunction
 " Markdown underline command
 inoremap <C-U>- <Esc>yypVr-ja
 inoremap <C-U>= <Esc>yypVr=ja
+
+" Make page up and down work in insert mode
+inoremap <C-f> <C-o><C-f>
+inoremap <C-b> <C-o><C-b>
