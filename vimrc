@@ -23,6 +23,8 @@ set numberwidth=4       " Minimum number of columns to show for line numbers.
 set laststatus=2        " Always show a status line.
 set visualbell t_vb=    " Use null visual bell (no beeps or flashes).
 
+set history=10000       " Default history is too too small.
+
 set scrolloff=3         " Context lines at top and bottom of display.
 set sidescrolloff=5     " Context columns at left and right.
 set sidescroll=1        " Number of chars to scroll when scrolling sideways.
@@ -103,7 +105,8 @@ endfunc
 " Lose our on the short search forward and backward repeats.
 " Used these for too long...
 let mapleader = ","
-nnoremap ; :
+nnoremap \ ,
+" nnoremap ; :
 
 " Jump from insert into normal mode
 inoremap kj <ESC>
@@ -138,8 +141,8 @@ nmap <leader>vc :tabedit $MYVIMRC<CR>
 nmap <leader>vt :tabedit
 map <leader>vs :sp
 nmap <leader>vv :vsp
-nnoremap <C-h> <C-left>
-nnoremap <C-l> <C-right>
+nnoremap <left> :bprev<cr>
+nnoremap <right> :bnext<cr>
 
 " Toggle search highlighting. Sometimes it gets annoying when doing
 " searches for movement
@@ -177,6 +180,7 @@ vnoremap . :normal .<cr>
 " Tmux key bindings
 
 nnoremap <leader>r :SlimuxREPLSendLine<CR>
+nnoremap <leader>e vip:SlimuxREPLSendSelection<CR>
 vnoremap <leader>r :SlimuxREPLSendSelection<CR>
 nnoremap <leader>aa :SlimuxShellLast<CR>
 nnoremap <leader>ai :SlimuxShellPrompt<CR>
