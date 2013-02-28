@@ -46,6 +46,7 @@ set smartcase           " Override 'ignorecase' if pattern contains uppercase.
 
 set nocursorline        " Don't highlight the current screen line...
 set nocursorcolumn      " ...or screen column...
+set virtualedit=block   " Virtual edit when in visual block mode
 
 set wildmenu              " Use menu when autocompleting
 set wildmode=longest,full " Use bash style for first tab, then wildmenu for double
