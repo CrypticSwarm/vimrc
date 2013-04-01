@@ -1,0 +1,6 @@
+snippet v8f
+	static Handle<Value> ${1:Name}(const Arguments& args) {
+		HandleScope scope;
+		${3://body}
+		return ${2:Undefined()};
+	}
