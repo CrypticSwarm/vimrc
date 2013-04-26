@@ -208,3 +208,6 @@ inoremap <C-U>= <Esc>yypVr=ja
 " Make page up and down work in insert mode
 inoremap <C-f> <C-o><C-f>
 inoremap <C-b> <C-o><C-b>
+
+" See http://xkcd.com/149/
+command Makemeasandwich :execute ':silent w !sudo tee % > /dev/null' | :edit!
