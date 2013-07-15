@@ -147,7 +147,7 @@ nnoremap <right> :bnext<cr>
 
 " Toggle search highlighting. Sometimes it gets annoying when doing
 " searches for movement
-nnoremap <silent> <leader>o :nohlsearch<cr>
+nnoremap <silent> <leader>/ :nohlsearch<cr>
 
 " Toggle syntax highlighting on and off.
 " Useful for long lines
