@@ -133,6 +133,9 @@ nnoremap <leader>wK <C-w>K
 nnoremap <leader>wH <C-w>H
 nnoremap <leader>wr <C-w>r
 
+" Command Line Movement
+cnoremap <C-a> <C-b>
+
 " I used to commonly mistype and press F1 instead of Esc
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
