@@ -212,5 +212,8 @@ inoremap <C-U>= <Esc>yypVr=ja
 inoremap <C-f> <C-o><C-f>
 inoremap <C-b> <C-o><C-b>
 
+" via http://vim.wikia.com/wiki/Easy_edit_of_files_in_the_same_directory
+cabbr <expr> %% expand('%:p:h')
+
 " See http://xkcd.com/149/
 command Makemeasandwich :execute ':silent w !sudo tee % > /dev/null' | :edit!
