@@ -147,6 +147,8 @@ map <leader>vs :sp
 nmap <leader>vv :vsp
 nnoremap <left> :bprev<cr>
 nnoremap <right> :bnext<cr>
+nnoremap <up> :cnext<cr>
+nnoremap <down> :cprev<cr>
 
 " Toggle search highlighting. Sometimes it gets annoying when doing
 " searches for movement
