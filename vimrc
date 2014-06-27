@@ -227,3 +227,5 @@ augroup vim_filtype
   autocmd BufRead,BufNewFile *.jpg,*.png,*.gif set filetype=image
   autocmd FileType image call system('git web--browse ' . shellescape(expand('%:p'))) | bd
 augroup end
+
+let g:ack_default_options = " -H --nocolor --nogroup --column"
