@@ -224,7 +224,6 @@ augroup vim_filtype
   autocmd!
   autocmd VimEnter * :if argc() is 0 | Explore | endif
   autocmd BufRead,BufNewFile *.hjs set filetype=html
-  autocmd BufRead,BufNewFile *.jpg set filetype=image
-  autocmd BufRead,BufNewFile *.png set filetype=image
+  autocmd BufRead,BufNewFile *.jpg,*.png,*.gif set filetype=image
   autocmd FileType image call system('git web--browse ' . shellescape(expand('%:p'))) | bd
 augroup end
