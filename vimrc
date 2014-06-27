@@ -218,7 +218,7 @@ inoremap <C-b> <C-o><C-b>
 cabbr <expr> %% expand('%:p:h')
 
 " See http://xkcd.com/149/
-command Makemeasandwich :execute ':silent w !sudo tee % > /dev/null' | :edit!
+command! Makemeasandwich :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
 augroup vim_filtype
   autocmd!
