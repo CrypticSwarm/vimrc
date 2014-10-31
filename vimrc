@@ -219,6 +219,7 @@ cabbr <expr> %% expand('%:p:h')
 
 " See http://xkcd.com/149/
 command! Makemeasandwich :execute ':silent w !sudo tee % > /dev/null' | :edit!
+command! E :execute ':Explore'
 
 augroup vim_filtype
   autocmd!
