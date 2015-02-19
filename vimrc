@@ -229,4 +229,4 @@ augroup vim_filtype
   autocmd FileType image call system('git web--browse ' . shellescape(expand('%:p'))) | bd
 augroup end
 
-let g:ack_default_options = " -H --nocolor --nogroup --column"
+let g:ackprg = 'ag --nogroup --nocolor --column'
