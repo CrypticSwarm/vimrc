@@ -14,6 +14,8 @@ set nosmartindent       " 'smartindent' breaks right-shifting of # lines.
 
 " Set the hidden chars
 set listchars=tab:▸\ ,eol:¬
+set iskeyword+=-
+set iskeyword+=/
 
 set hidden              " Keep changed buffers without requiring saves.
 set ruler               " Always show the cursor position.
