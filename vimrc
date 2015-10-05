@@ -59,6 +59,8 @@ set splitright " open vsp to the right
 set splitbelow " open sp to the below
 set diffopt+=vertical
 
+set tags=./tags,tags;$HOME " Walk up from current directory to the $HOME looking for tag files
+
 " Enable mouse support if it's available.
 if has('mouse')
   set mouse=a
