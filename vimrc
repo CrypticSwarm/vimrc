@@ -24,6 +24,7 @@ set number              " Display line numbers.
 set numberwidth=4       " Minimum number of columns to show for line numbers.
 set laststatus=2        " Always show a status line.
 set visualbell t_vb=    " Use null visual bell (no beeps or flashes).
+set t_ut=               " disable background erase some terminals seem to have this set by default which messes with color schemes
 
 set history=10000       " Default history is too too small.
 
@@ -204,10 +205,7 @@ if &term =~ '^screen'
   execute "set <xRight>=\e[1;*C"
   execute "set <xLeft>=\e[1;*D"
 
-  " disable background erase in tmux
-  set t_ut=
 endif
-
 
 " Lame fix for mac sucking at copy and pasting doesn't work inside tmux :(
 function! MacCopy() range
