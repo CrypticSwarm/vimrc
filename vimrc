@@ -57,6 +57,7 @@ set wildmode=longest,full " Use bash style for first tab, then wildmenu for doub
 set hidden     " allow hidden buffers
 set splitright " open vsp to the right
 set splitbelow " open sp to the below
+set diffopt+=vertical
 
 " Enable mouse support if it's available.
 if has('mouse')
