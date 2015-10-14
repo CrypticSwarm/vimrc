@@ -235,4 +235,8 @@ augroup vim_filtype
   autocmd FileType image call system('git web--browse ' . shellescape(expand('%:p'))) | bd
 augroup end
 
+" Syntastic config
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol ='⚠'
+
 let g:ackprg = 'ag --nogroup --nocolor --column'
