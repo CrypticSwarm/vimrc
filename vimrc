@@ -139,6 +139,8 @@ nnoremap <leader>wK <C-w>K
 nnoremap <leader>wH <C-w>H
 nnoremap <leader>wr <C-w>r
 
+nnoremap <leader>f :Lexplore<CR>
+
 " Command Line Movement
 cnoremap <C-a> <C-b>
 
