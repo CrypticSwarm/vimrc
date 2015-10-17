@@ -98,7 +98,7 @@ augroup resizeWindow
   endif
 augroup end
 
-nmap <C-S-P> :call <SID>SynStack()<CR>
+nmap <leader>p :call <SID>SynStack()<CR>
 function! <SID>SynStack()
   if !exists("*synstack")
     return
