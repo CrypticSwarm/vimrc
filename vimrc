@@ -186,6 +186,8 @@ nnoremap <silent> <leader>gb :Gblame<cr>
 nnoremap <silent> <leader>gl :Glog
 
 " Built in file browser
+let g:netrw_banner=0
+let g:netrw_winsize= -35
 let g:netrw_liststyle=3 " Use tree-mode as default view
 let g:netrw_preview=1 " preview window shown in a vertically split
 
