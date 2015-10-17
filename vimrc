@@ -244,3 +244,7 @@ let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol ='⚠'
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+nmap <leader>uu ysiw)iObservable.unpack<esc>
+
+autocmd FileType cpp setlocal iskeyword-=-
