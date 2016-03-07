@@ -10,9 +10,6 @@
 [submodule "bundle/stylus"]
 	path = bundle/stylus
 	url = git://github.com/wavded/vim-stylus.git
-[submodule "bundle/javascript"]
-	path = bundle/javascript
-	url = git://github.com/pangloss/vim-javascript.git
 [submodule "bundle/colors-solarized"]
 	path = bundle/colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized
