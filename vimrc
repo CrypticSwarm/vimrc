@@ -239,6 +239,10 @@ augroup vim_filtype
   autocmd FileType image call system('git web--browse ' . shellescape(expand('%:p'))) | bd
 augroup end
 
+" Use <C-L> to clear the highlighting of :set hlsearch and reset diffs
+" Pulled from tpope's vim-sensible
+nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+
 " Syntastic config
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol ='⚠'
