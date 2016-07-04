@@ -252,3 +252,6 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 nmap <leader>uu ysiw)iObservable.unpack<esc>
 
 autocmd FileType cpp setlocal iskeyword-=-
+
+" Orgmode: make checking checkboxes same as gmail and github
+autocmd FileType org nnoremap <buffer> x :silent OrgCheckBoxToggle<CR>
