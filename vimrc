@@ -255,3 +255,4 @@ autocmd FileType cpp setlocal iskeyword-=-
 
 " Orgmode: make checking checkboxes same as gmail and github
 autocmd FileType org nnoremap <buffer> X :silent OrgCheckBoxToggle<CR>
+let g:org_todo_keywords=['TODO', 'STARTED', 'TESTING', '|', 'DEPLOYED']
