@@ -247,7 +247,10 @@ nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol ='⚠'
 
+" Ack Config
 let g:ackprg = 'ag --nogroup --nocolor --column'
+" Add global search helper
+nnoremap <leader>/ :Ack!<space>
 
 nmap <leader>uu ysiw)iObservable.unpack<esc>
 
