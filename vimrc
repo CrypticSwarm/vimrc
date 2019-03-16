@@ -247,6 +247,7 @@ nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol ='⚠'
 let g:syntastic_cpp_compiler_options = "-std=c++17 -Wall -Wextra -Wpedantic"
+let g:syntastic_cpp_check_header = 1
 
 " Ack Config
 let g:ackprg = 'ag --nogroup --nocolor --column'
