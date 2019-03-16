@@ -73,3 +73,6 @@
 [submodule "bundle/table-mode"]
 	path = bundle/table-mode
 	url = git@github.com:dhruvasagar/vim-table-mode.git
+[submodule "bundle/vim-rhubarb"]
+	path = bundle/vim-rhubarb
+	url = git@github.com:tpope/vim-rhubarb.git
