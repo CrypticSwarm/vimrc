@@ -249,6 +249,13 @@ let g:syntastic_warning_symbol ='⚠'
 let g:syntastic_cpp_compiler_options = "-std=c++17 -Wall -Wextra -Wpedantic"
 let g:syntastic_cpp_check_header = 1
 
+" Ultisnips config
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
+
 " Ack Config
 let g:ackprg = 'ag --nogroup --nocolor --column'
 " Add global search helper
