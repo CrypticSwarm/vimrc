@@ -1,0 +1,56 @@
+snippet fd "fetch_data"
+${2:$1} <- model.quality::fetch_data("${1:${VISUAL:campaign_info}}")
+endsnippet
+
+snippet fdt "fetch_data with time"
+${4:$1} <- model.quality::fetch_data("${1:${VISUAL:performance_data}}", num_time_steps = ${2:7}, end_time = ${3:today})
+endsnippet
+
+snippet dc "define_computable" b
+model.quality::define_computable("$1", ${2:$1})
+endsnippet
+
+snippet dct "define_computable with time" b
+model.quality::define_computable("$1", ${2:$1}, time_step = ${3:lubridate::days(1)})
+endsnippet
+
+snippet fndoc "Add an r function with documentation" b
+#' \code{$1} `!p
+snip.rv = " ".join(map(lambda x: x.capitalize(), t[1].split('_')))
+`
+#'
+#' ${2:DESCRIPTION}`!p
+if not t[3]:
+	snip.rv = ""
+else:
+	snip.rv="\n" + "\n".join(map(lambda x: "#' @param " + x, t[3].split(', ')))`
+#' @examples
+#' \dontrun{
+#' $1($3)
+#' }
+$1 <- function ($3) {
+}
+endsnippet
+
+snippet cdoc "Add an computable function with documentation" b
+#' \code{$1} `!p
+snip.rv = " ".join(map(lambda x: x.capitalize(), t[1].split('_')))
+`
+#'
+#' ${2:DESCRIPTION}`!p
+if not t[3]:
+	snip.rv = ""
+else:
+	snip.rv="\n" + "\n".join(map(lambda x: "#' @param " + x, t[3].split(', ')))`
+#' @examples
+#' \dontrun{
+#' model.quality::fetch_data("$1"`!p
+if not t[3]:
+  snip.rv = ""
+else:
+	snip.rv=", " + ", ".join(map(lambda x: x + " = " + x, t[3].split(', ')))
+`)
+#' }
+$1 <- function ($3) {
+}
+endsnippet
