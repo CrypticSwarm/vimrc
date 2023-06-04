@@ -62,6 +62,8 @@ set diffopt+=vertical
 
 set tags=./tags,tags,./.tags,.tags;$HOME " Walk up from current directory to the $HOME looking for tag files
 
+set concealcursor=c
+
 " Enable mouse support if it's available.
 if has('mouse')
   set mouse=a
