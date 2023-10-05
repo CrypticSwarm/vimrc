@@ -1,21 +1,29 @@
 snippet fd "fetch_data"
-${2:$1} <- model.quality::fetch_data("${1:${VISUAL:campaign_info}}")
+${2:$1} <- model.quality::fetch_data('${1:${VISUAL:campaign_info}}')
 endsnippet
 
 snippet fdt "fetch_data with time"
-${4:$1} <- model.quality::fetch_data("${1:${VISUAL:performance_data}}", num_time_steps = ${2:7}, end_time = ${3:today})
+${4:$1} <- model.quality::fetch_data('${1:${VISUAL:performance_data}}', num_time_steps = ${2:7}, end_time = ${3:cog::today()})
 endsnippet
 
 snippet dc "define_computable" b
-model.quality::define_computable("$1", ${2:$1})
+model.quality::define_computable('$1', ${2:$1})
 endsnippet
 
 snippet dct "define_computable with time" b
-model.quality::define_computable("$1", ${2:$1}, time_step = ${3:lubridate::days(1)})
+model.quality::define_computable('$1', ${2:$1}, time_step = ${3:lubridate::days(1)})
+endsnippet
+
+snippet paramds "Add and data source @param" b
+#' @param $1 The $1 data source
+endsnippet
+
+snippet paramc "Add and computable @param" b
+#' @param $1 The $1 computable
 endsnippet
 
 snippet fndoc "Add an r function with documentation" b
-#' \code{$1} `!p
+#' `!p
 snip.rv = " ".join(map(lambda x: x.capitalize(), t[1].split('_')))
 `
 #'
@@ -33,7 +41,7 @@ $1 <- function ($3) {
 endsnippet
 
 snippet cdoc "Add an computable function with documentation" b
-#' \code{$1} `!p
+#' `!p
 snip.rv = " ".join(map(lambda x: x.capitalize(), t[1].split('_')))
 `
 #'
@@ -53,4 +61,19 @@ else:
 #' }
 $1 <- function ($3) {
 }
+endsnippet
+
+snippet dashboard "Inject the dashboard computable" b
+dashboard <- model.quality::fetch_data(
+  'dashboard',
+  end_time = ${1:lubridate::today()},
+  num_time_steps = ${2:1},
+  lookbehind = ${3:lubridate::days(1)},
+  group_by = c($4),
+  computed_columns = c($5),
+  daily_average = ${6:F},
+  ignore_historical_cpx = ${7:F},
+  ignore_historical_pcpm = ${8:F},
+  ignore_historical_pcpm_period = ${9:7}
+)
 endsnippet
