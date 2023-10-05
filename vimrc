@@ -179,7 +179,7 @@ nnoremap <F9> :set expandtab<ENTER>:retab<ENTER>
 nnoremap <silent> <leader>[ :set list!<CR>
 
 " Fugitive Bindings prefix -> <leader>g 
-nnoremap <silent> <leader>gs :Gstatus<cr>
+nnoremap <silent> <leader>gs :Git<cr>
 nnoremap <silent> <leader>gd :Gdiff<cr>
 nnoremap <silent> <leader>gc :Gcommit<cr>
 nnoremap <silent> <leader>gw :Gwrite<cr>
