@@ -181,11 +181,11 @@ nnoremap <silent> <leader>[ :set list!<CR>
 " Fugitive Bindings prefix -> <leader>g 
 nnoremap <silent> <leader>gs :Git<cr>
 nnoremap <silent> <leader>gd :Gdiff<cr>
-nnoremap <silent> <leader>gc :Gcommit<cr>
+nnoremap <silent> <leader>gc :Git commit<cr>
 nnoremap <silent> <leader>gw :Gwrite<cr>
 nnoremap <silent> <leader>gr :Gread<cr>
-nnoremap <silent> <leader>gb :Gblame<cr>
-nnoremap <silent> <leader>gl :Glog
+nnoremap <silent> <leader>gb :Git blame<cr>
+nnoremap <silent> <leader>gl :Gclog
 
 " Built in file browser
 let g:netrw_banner=0
