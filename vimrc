@@ -84,20 +84,16 @@ colorscheme calmar256-dark
 
 " Source the vimrc file after saving it {{{
 augroup vimrc
-  if has("autocmd")
-    autocmd!
-    autocmd FileType vim setlocal foldmethod=marker
-    autocmd BufWritePost .vimrc source $MYVIMRC
-  endif
+  autocmd!
+  autocmd FileType vim setlocal foldmethod=marker
+  autocmd BufWritePost .vimrc source $MYVIMRC
 augroup end
 " }}}
 
 
 augroup resizeWindow
-  if has("autocmd")
-    autocmd!
-    autocmd VimResized * exe "normal \<C-W>="
-  endif
+  autocmd!
+  autocmd VimResized * exe "normal \<C-W>="
 augroup end
 
 nmap <leader>p :call <SID>SynStack()<CR>
