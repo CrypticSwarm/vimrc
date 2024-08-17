@@ -17,7 +17,6 @@ set listchars=tab:▸\ ,eol:¬
 set iskeyword+=-
 set iskeyword+=/
 
-set hidden              " Keep changed buffers without requiring saves.
 set ruler               " Always show the cursor position.
 set showcmd             " Display incomplete commands.
 set number              " Display line numbers.
