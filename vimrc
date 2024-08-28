@@ -25,7 +25,7 @@ set laststatus=2        " Always show a status line.
 set visualbell t_vb=    " Use null visual bell (no beeps or flashes).
 set t_ut=               " disable background erase some terminals seem to have this set by default which messes with color schemes
 
-set history=10000       " Default history is too too small.
+set history=1000       " Default history is too too small.
 
 set scrolloff=3         " Context lines at top and bottom of display.
 set sidescrolloff=5     " Context columns at left and right.
