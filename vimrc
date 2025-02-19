@@ -108,7 +108,7 @@ endfunc
 " Both of these are pretty dangerous mappings.
 " Lose our on the short search forward and backward repeats.
 " Used these for too long...
-let mapleader = ","
+let mapleader = " "
 nnoremap \ ,
 " nnoremap ; :
 
